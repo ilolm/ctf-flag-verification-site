@@ -1,0 +1,34 @@
+services:
+  nginx:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/var/www/html
+    depends_on:
+      - db
+      - php
+
+  php:
+    build:
+      context: .
+      dockerfile: php.Dockerfile
+    restart: unless-stopped
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: "A2o9hOlQDNb9BNDgzIJVtyYQWKG9n9qQaQ=="
+      MYSQL_DATABASE: ctf
+    volumes:
+      - ./html:/var/www/html
+
+  db:
+    image: mysql:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: "JDflhsdfjkdshgjewhjtkahewrjk2hjkhjkhrefjdj2342342==1"
+      MYSQL_USER: user
+      MYSQL_PASSWORD: "A2o9hOlQDNb9BNDgzIJVtyYQWKG9n9qQaQ=="
+      MYSQL_DATABASE: ctf
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d
