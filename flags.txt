@@ -1,6 +1,0 @@
-Database Password: ZXGPK9tk7s0RPqp3Q8d1Hy5MZRw=
-user.txt: MAIN_FLAG{4ToMcQTiz2DwArvLvX1LYKb+arNRARbIBQ==}
-gleb.txt: FLAG{7XXPJr1fZ8ZzokIGG2zPb3pqRy2+kEKElg==}
-rebeca.txt: FLAG{FVS3p1C+3D5LpHE+UrFNa3sJqY0ZnoCnBA==}
-docker-root.txt: DOCKER_FLAG{RcB+VKVQkcwkSzvEbXO/YBeOVFcjFn+1GA==}
-root.txt: MAIN_FLAG{rdTyxhnAn5GYGocENB7JSAW5i0H3XELkjyQl1ZhpDIyaNfEjQa8fVQ==}
