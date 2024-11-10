@@ -45,8 +45,8 @@ This project is a web-based flag verification system, designed specifically for 
 
 ## 🗂️ Project Structure
 
-- **/initdb**: SQL scripts for initializing the MySQL database.
-- **/src**: Source code for the web application.
+- **/initdb**: MySQL database for being initialized inside docker-compose MySQL image.
+- **/html**: HTML web page source code.
 - **docker-compose.yml**: Configuration for Docker Compose.
 
 ---
